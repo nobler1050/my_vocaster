@@ -1,0 +1,9 @@
+[Unit]
+Description=My vocaster Script Service used to monitor the state of the guest mute and update the mix used for xbox
+After=multi-user.target
+
+[Service]
+ExecStart=/home/rnoble/git/my_vocaster/vocaster_xbox_mute.sh
+
+[Install]
+WantedBy=multi-user.target

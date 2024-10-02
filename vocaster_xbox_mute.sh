@@ -31,13 +31,9 @@ find_device() {
 set_volume() {
   local card=$(find_device)
   # numid=105,iface=MIXER,name='Mix C Input 01 Playback Volume'
-  # numid=106,iface=MIXER,name='Mix C Input 02 Playback Volume'
   # numid=117,iface=MIXER,name='Mix D Input 01 Playback Volume'
-  # numid=118,iface=MIXER,name='Mix D Input 02 Playback Volume'
   amixer -c $card cset numid=105 $1
-  amixer -c $card cset numid=106 $1
   amixer -c $card cset numid=117 $1
-  amixer -c $card cset numid=118 $1
 }
 
 toggle_mute() {

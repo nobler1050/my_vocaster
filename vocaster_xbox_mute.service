@@ -1,5 +1,5 @@
 [Unit]
-Description=My vocaster Script Service used to monitor the state of the guest mute and update the mix used for xbox
+Description=Script Service used to monitor the state of the guest mute and update the mix used for xbox.
 After=multi-user.target
 
 [Service]

@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# numid=36,iface=MIXER,name='Line In 1 Mute Capture Switch'
-# numid=37,iface=MIXER,name='Line In 2 Mute Capture Switch'
-# numid=6,iface=MIXER,name='Line In 1 DSP Capture Switch'
-# numid=21,iface=MIXER,name='Line In 2 DSP Capture Switch'
-
 DEVICE_NAME="Vocaster Two USB"
 VOLUME="85%"
 SLEEP="0.1"
@@ -29,9 +24,9 @@ find_device() {
 }
 
 set_volume() {
-  local card=$(find_device)
   # numid=105,iface=MIXER,name='Mix C Input 01 Playback Volume'
   # numid=117,iface=MIXER,name='Mix D Input 01 Playback Volume'
+  local card=$(find_device)
   amixer -c $card cset numid=105 $1
   amixer -c $card cset numid=117 $1
 }

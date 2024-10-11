@@ -1,0 +1,9 @@
+[Unit]
+Description=Service used to monitor the state of the guest enhance toggle and update the mix used for mic monitoring.
+After=graphical.target
+
+[Service]
+ExecStart=/home/rnoble/git/my_vocaster/vocaster_mic_monitor.sh
+
+[Install]
+WantedBy=graphical.target

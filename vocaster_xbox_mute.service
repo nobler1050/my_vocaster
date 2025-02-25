@@ -6,4 +6,4 @@ After=multi-user.target
 ExecStart=/home/rnoble/git/my_vocaster/vocaster_xbox_mute.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Vocaster Check Every Minute
+
+[Timer]
+OnCalendar=*:*:*
+Persistent=true
+
+[Install]
+WantedBy=timers.target

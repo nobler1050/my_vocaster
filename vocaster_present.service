@@ -1,0 +1,6 @@
+[Unit]
+Description=Check for Vocaster Presence
+
+[Service]
+Type=oneshot
+ExecStart=/home/rnoble/git/my_vocaster/vocaster_present.sh

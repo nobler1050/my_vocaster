@@ -1,8 +1,9 @@
 [Unit]
-Description=Run Vocaster Check Every Minute
+Description=Run Vocaster Check
 
 [Timer]
-OnCalendar=*:*:*
+OnCalendar=*:0/10
+OnBootSec=1
 Persistent=true
 
 [Install]

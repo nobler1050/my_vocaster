@@ -45,6 +45,7 @@ enable_services() {
   if [ -f "$CONFIG_DIR/$service_name" ]; then
     echo "Enabling service $service_name..."
     systemctl --user enable "$service_name" || { echo "Failed to enable service $service_name."; exit 1; }
+    systemctl --user start "$service_name" || { echo "Failed to start service $service_name."; exit 1; }
   else
     echo "Service file $CONFIG_DIR/$service_name not found, skipping enable."
   fi

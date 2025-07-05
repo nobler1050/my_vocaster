@@ -27,7 +27,7 @@ To utilize this configuration, you'll need the following:
 * An XLR microphone.
 * Speakers and Headphones.
 * The `alsa-scarlett-gui` tool for managing the Vocaster's settings: [https://github.com/geoffreybennett/alsa-scarlett-gui.git](https://github.com/geoffreybennett/alsa-scarlett-gui.git)
-* The `alsa-ucm-conf` package for UCM configuration: [https://github.com/alsa-project/alsa-ucm-conf](https://github.com/alsa-project/alsa-ucm-conf)
+* The `alsa-ucm-conf` package for UCM configuration: [https://github.com/geoffreybennett/alsa-ucm-conf](https://github.com/geoffreybennett/alsa-ucm-conf)
 
 ## Installation and Configuration
 

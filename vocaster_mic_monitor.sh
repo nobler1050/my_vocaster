@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DEVICE_NAME="Vocaster Two USB"
-VOLUME="65%"
+VOLUME="85%"
 SLEEP="0.1"
 
 check_monitor_state() {

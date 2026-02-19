@@ -3,7 +3,7 @@ Description=Run Vocaster Check
 
 [Timer]
 OnCalendar=*:0/10
-OnBootSec=1
+OnBootSec=1min
 Persistent=true
 
 [Install]

@@ -3,7 +3,9 @@ Description=Script Service used to monitor the state of the guest mute and updat
 After=multi-user.target
 
 [Service]
-ExecStart=/home/rnoble/git/my_vocaster/vocaster_xbox_mute.sh
+ExecStart=%h/git/my_vocaster/vocaster_xbox_mute.sh
+Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=default.target

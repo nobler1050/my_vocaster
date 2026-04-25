@@ -3,7 +3,9 @@ Description=Service used to monitor the state of the guest enhance toggle and up
 After=graphical.target
 
 [Service]
-ExecStart=/home/rnoble/git/my_vocaster/vocaster_mic_monitor.sh
+ExecStart=%h/git/my_vocaster/vocaster_mic_monitor.sh
+Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=default.target

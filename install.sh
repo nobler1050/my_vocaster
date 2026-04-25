@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-REPO_URL="git@github.com:nobler1050/my_vocaster.git"
+REPO_URL="https://github.com/nobler1050/my_vocaster.git"
 REPO_NAME=$(basename "$REPO_URL" .git)
 INSTALL_DIR="$HOME/git/$REPO_NAME"
 CONFIG_DIR="$HOME/.config/systemd/user"
